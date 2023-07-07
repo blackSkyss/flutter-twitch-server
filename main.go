@@ -38,7 +38,7 @@ func main() {
 
 	api := gin.Default()
 
-	port := os.Getenv("PORT")
+	port := os.Getenv("HTTP_PLATFORM_PORT")
 	if port == "" {
 		port = "8080"
 	}
